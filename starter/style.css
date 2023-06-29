@@ -1,0 +1,37 @@
+/*h1{
+
+    font-family: sans-serif;
+}
+
+h2{
+    font-family: sans-serif;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+li{
+    font-family: sans-serif;
+}
+*/
+
+h1,
+p,
+li {
+  font-family: sans-serif;
+}
+
+header a {
+  color: blue;
+}
+
+/*Selector id*/
+#nav-active {
+  color: blueviolet;
+}
+
+/*Selector clas*/
+.link {
+  color: blue;
+}
