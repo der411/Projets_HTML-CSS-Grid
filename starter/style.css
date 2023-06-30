@@ -16,22 +16,73 @@ li{
 }
 */
 
-h1,
-p,
-li {
+body {
   font-family: sans-serif;
+  color: #444;
+  border-top: #484c89 5px solid;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 header a {
   color: blue;
 }
 
+#main-header {
+  background-color: #c5c5c5; /*Hexadecimal*/
+  /*border-width: 10px;
+   border-color: #484c89;
+   border-style: solid;
+   border: #484c89 10px solid;*/
+}
+
 /*Selector id*/
 #nav-active {
   color: blueviolet;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
-/*Selector clas*/
-.link {
+/*Selector class*/
+a:link,
+a:visited {
+  color: #484c89;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  color: red;
+}
+
+#main-header a:first-child {
   color: blue;
 }
+
+/* main -> article -> ol  
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: blue;
+}
+
+p:nth-of-type(1) {
+  background: orangered;
+}
+
+ol:nth-of-type(1) li:nth-child(2) {
+  color: yellow;
+}
+
+odd => Nombre impaire
+even => Nombre paire
+
+li:nth-child(odd) {
+  color: blue;
+}
+*/

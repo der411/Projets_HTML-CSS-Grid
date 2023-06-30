@@ -1,0 +1,15 @@
+# Ignorer les fichiers temporaires
+*.tmp
+*.bak
+
+# Ignorer les fichiers de configuration
+.vscode/
+config.json
+
+# Ignorer les fichiers de cache
+.cache/
+*.log
+
+# Ignorer les fichiers générés
+build/
+dist/
