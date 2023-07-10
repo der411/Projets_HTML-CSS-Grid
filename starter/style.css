@@ -15,16 +15,34 @@ li{
     font-family: sans-serif;
 }
 */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
 
 body {
   font-family: sans-serif;
   color: #444;
-  border-top: #484c89 5px solid;
+  border-top: #484c89 0.5rem solid;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+h1, 
+h2, 
+h3{
+  color: #484c89;
 }
 
 h1 {
+  font-size: 2.6rem;
   text-transform: uppercase;
   font-style: italic;
+  color: #484c89;
 }
 
 header a {
@@ -32,11 +50,19 @@ header a {
 }
 
 #main-header {
-  background-color: #c5c5c5; /*Hexadecimal*/
+  background-color: #c5c5c5;
+  margin-bottom: 6rem;
+  padding: 2rem 4rem; /*Hexadecimal*/
   /*border-width: 10px;
    border-color: #484c89;
    border-style: solid;
    border: #484c89 10px solid;*/
+}
+
+#main-header a{
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 1rem 3rem 0 0;
 }
 
 /*Selector id*/
@@ -58,31 +84,72 @@ a:hover {
   color: red;
 }
 
+
+.container{
+  width: 80rem;
+  margin: 0 auto;
+}
 #main-header a:first-child {
-  color: blue;
+  color: #ffc107;
+  font-weight: bold;
 }
 
-/* main -> article -> ol  
-li:first-child {
-  color: red;
+article{
+  margin-bottom: 6rem;
 }
 
-li:last-child {
-  color: blue;
+.post-header{
+  margin-bottom: 4rem;
 }
 
-p:nth-of-type(1) {
-  background: orangered;
+.post-header h2{
+  position: relative;
+  font-size: 4rem;
+  margin-bottom: 3rem;
 }
 
-ol:nth-of-type(1) li:nth-child(2) {
-  color: yellow;
+.post-header h2::before{
+  position:absolute;
+  right:-2rem;
+  top: -1rem;
+  content: "TOP";
+  background-color: #ffc107;
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
 }
 
-odd => Nombre impaire
-even => Nombre paire
-
-li:nth-child(odd) {
-  color: blue;
+#author{
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 15px;
 }
-*/
+
+.post-img{
+  width: 100%;
+  height: auto;
+}
+article h3{
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+ul, ol{
+  margin: 2rem 0 2rem 5rem;
+}
+
+aside{
+  width: 50rem;
+  border-top: 0.5rem solid #484c89;
+  border-bottom: 0.5rem solid #484c89;
+  background-color: #f7f7f7;
+  padding: 5rem 0;
+}
+
+button{
+
+  position: absolute;
+  padding: 1.6rem;
+  bottom: 0;
+  right: 3rem;
+}

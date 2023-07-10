@@ -3,32 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Challenge</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sneakers athletic</title>
   </head>
-
   <body>
-    <main>
+    <main class="post-main">
       <article>
-        <h1>Sneakers athletic</h1>
-        <img src="./challenges.jpg" alt="Picture Sneakers athletic" width="400" height="400" />
-        <p ><strong id="price">75,00€</strong></p>
-        <p id="delivery">Livraison gratuite</p>
-        <p id="txt">
-          Prêtes à être habillées ou décontractées, ces sneakers classiques colorés sont un
-          incontournable de la garde-robe de tous les jours.
-        </p>
-        <a href="#">En savoir plus &rarr;</a>
+        <div>
+          <h1>Sneakers athletic</h1>
+          <img src="./challenges.jpg" alt="image Sneakers athletic" />
+          <p id="price"><strong>75.00€</strong></p>
+          <p class="delivery">Livraison gratuite</p>
+        </div>
 
-        <h2>Description du produit</h2>
+        <div class = "container">
+          <p class="description">
+            Prêtes à être habillées ou décontractées, ces sneakers classiques colorés sont un
+            incontournable de la garde-robe de tous les jours.
+          </p>
+          <a href="#">En savoir plus &rarr;</a>
+        </div>
 
-        <ul>
-          <li>Type: Sneakers</li>
-          <li>Semelle: caoutchouc</li>
-          <li>Détails: fermeture lacet, confort maximal</li>
-        </ul>
+        <div class="color-squares">
+          <div class="color black"></div>
+          <div class="color blue"></div>
+          <div class="color red"></div>
+          <div class="color yellow"></div>
+          <div class="color green"></div>
+          <div class="color brown"></div>
+        </div>
 
-        <button>Ajouter au panier</button>
+        <div>
+          <h3>Description du produit</h3>
+          <ul>
+            <li>Type: Sneakers</li>
+            <li>Semelle: caoutchouc</li>
+            <li>Détails: fermeture lacet, confort maximal</li>
+          </ul>
+        </div>
+
+        <button>ajouter au panier</button>
       </article>
     </main>
   </body>
