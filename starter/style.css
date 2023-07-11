@@ -15,9 +15,12 @@ li{
     font-family: sans-serif;
 }
 */
-*{
+*,
+*::after,
+*::before{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -146,10 +149,13 @@ aside{
   padding: 5rem 0;
 }
 
-button{
+footer{
+  position: absolute;
+}
+footer button{
 
   position: absolute;
   padding: 1.6rem;
   bottom: 0;
-  right: 3rem;
+  left: 40rem;
 }
