@@ -1,129 +1,87 @@
-body {
-  font-family: sans-serif;
-}
-
-article {
-  border: 5px solid #000;
-}
-
-/*Exercice*/
-
-article h1{
-  position :relative;
-}
-
-article h1::before{
-  position:absolute;
-  left:-2rem;
-  top: -1rem;
-  background-color: red;
-  font-size: small;
-  color: #fff;
-  content: "SALE";
-  padding: 0.5rem 1rem;
-}
-
-
-
-
-
-.color-squares {
-  margin-bottom: 20px;
-}
-
-.color {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-
-.color.black {
-  background: black;
-}
-
-.color.blue {
-  background: blue;
-}
-
-.color.red {
-  background: red;
-}
-
-.color.yellow {
-  background: yellow;
-}
-
-.color.green {
-  background: green;
-}
-
-.color.brown {
-  background: brown;
-}
-
-
-/*Fin exercice*/
-
-
-
-h1 {
-  text-align: center;
-  background-color: rgb(192, 189, 189);
+*,
+*::after,
+*::before{
   margin: 0;
-  padding: 16px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img {
-  width: 300px;
-  height: 300px;
+.post-header{
+    position: relative;
+    padding-top: 8rem;
 }
 
-#price {
-  font-size: 20px;
-  margin: 0;
-}
-
-.delivery {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-  color: rgb(192, 189, 189);
-  margin: 0;
-}
-
-.description {
-  margin-bottom: 0;
-}
-
-a:link,
-a:visited {
-  color: #000;
-}
-
-div:last-of-type {
-  margin-top: 50px;
-}
-
-ul {
-  list-style: square;
-  padding-left: 14px;
-}
-
-li {
-  margin-bottom: 16px;
-}
-
-button {
+.post-header::before{
+  content: "2-Jazzy";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: #000;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 14px;
-  border: none;
+  height: 5rem;
+  background-color: #070766;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main{
-  width: 800px;
-  margin: auto;
+h1{
+    text-transform: uppercase;
+    text-align: center;
+   
 }
+
+.intro p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.album {
+    background-color: #070766;
+    margin: 5rem auto 5rem auto;
+    padding: 1rem;
+    width: 50rem;
+    height: 25rem;
+  }
+  
+  .cover {
+    height: 16rem;
+    width: auto;
+    order: 1;
+  }
+
+
+  .about{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about h2, .about h3{
+    color: yellow;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .about p{
+    color: white;
+  }
+
+
+  .clearfix {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  img{
+    height: 5rem;
+    width: auto;
+    margin: 0.4rem;
+  }
+
+  footer{
+    background-color: rgb(7, 7, 102);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+  }
