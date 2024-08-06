@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML & CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffd700;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff4500;
+        }
+    </style>
 </head>
 <body>
-    <h1>Visiter mes travaux 🌟</h1>
+    <header>
+        <h1>Visiter mes travaux 🌟</h1>
+        <p>Ce sont de petits projets que j'ai réalisés lors de ma première formation de développeur web. J'y ai notamment découvert Grid et les media queries pour le responsive design.</p>
+    </header>
     <ul>
         <li><a href="challenge/index.html">Projet Challenge</a></li>
         <li><a href="grid-css/index.html">Projet Grid CSS</a></li>
@@ -13,5 +57,8 @@
         <li><a href="discography/index.html">Projet Discography</a></li>
         <li><a href="starter/index.html">Projet Starter</a></li>
     </ul>
+    <footer>
+        <p>© 2024 Mon Portfolio | Tous droits réservés</p>
+    </footer>
 </body>
 </html>
