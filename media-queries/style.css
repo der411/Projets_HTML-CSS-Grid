@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Taille par défaut du html 16px */
+
+html{
+  /* Size/16 * 100 */
+  /* 10/16*100=62.5*/
+  /* 1rem=10px*/
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+}
+
+body{
+  font-size: 1.5rem;
+}
+
+header {
+  background-color: #0f054b;
+  text-align: center;
+  color: #f7f7f7;
+  padding: 1.4rem 0;
+  margin-bottom: 5rem;
+}
+
+.intro {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.intro h1 {
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.album {
+  width: 80rem;
+  background-color: #0f054b;
+  color: #f7f7f7;
+  padding: 2.5rem;
+}
+
+.album h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #febe01;
+  margin-bottom: 2.5rem;
+}
+
+.album h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  color: #febe01;
+}
+
+.album p {
+  line-height: 1.3;
+}
+
+.clearfix {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.clearfix img {
+  width: 30rem;
+  height: auto;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons .icon {
+  width: 12rem;
+  /* max-width: 10rem;
+  width: 20%; */
+}
+
+.album:last-child h2,
+.album:last-child h3 {
+  color: #ff3b39;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: #0f054b;
+  text-align: center;
+  color: #f7f7f7;
+  padding: 1rem 0;
+}
+
+                /* Media Queries */
+                
+/* Déclaration d'un point de rupture */
+/* 1em=16px */
+/* rem et em ne dépendent pas de la font-size du html uniquement
+   pour le point de rupture du media queries --> 1rem=1em=16px */
+
+/* Medium screen */
+@media(max-width:55em){
+ html{
+  font-size: 56.25%;
+ }
+ .clearfix{
+  flex-direction: column;
+ }
+ .album{
+  width: 60rem;
+ }
+}
+ /* Deuxieme point de cassure */
+ @media(max-width:37em){
+    .album{
+      /* min-width: 40em; */
+      width: calc(100vw-10rem);
+      width: 90%;
+    }
+    .icons{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 1.5rem;
+    }
+ }
