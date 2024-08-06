@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Grid CSS</title>
+    <title>Exemple CSS Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes de même taille */
+            grid-template-rows: 100px 100px 100px; /* Trois lignes de 100px de hauteur */
+            gap: 10px; /* Espace entre les cellules */
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: #8a2be2; /* Violet */
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+        .item1 { background-color: #ff6347; } /* Rouge tomate */
+        .item2 { background-color: #4682b4; } /* Bleu acier */
+        .item3 { background-color: #3cb371; } /* Vert mer moyen */
+        .item4 { background-color: #ffa500; } /* Orange */
+        .item5 { background-color: #9acd32; } /* Vert jaune */
+        .item6 { background-color: #6a5acd; } /* Bleu ardoise */
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box box-1">BOX #1</div>
-        <div class="box box-2">BOX #2</div>
-        <div class="box box-3">BOX #3</div>
-        <div class="box box-4">BOX #4</div>
-    </div>
-    
+
+<div class="grid-container">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item item2">2</div>
+    <div class="grid-item item3">3</div>
+    <div class="grid-item item4">4</div>
+    <div class="grid-item item5">5</div>
+    <div class="grid-item item6">6</div>
+</div>
+
 </body>
 </html>
