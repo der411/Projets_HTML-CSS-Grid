@@ -28,7 +28,7 @@ Bienvenue sur mon portfolio de projets réalisés lors de ma première formation
 
 ## Accès aux Projets 🚀
 
-Vous pouvez explorer tous mes projets directement sur [GitHub Pages](https://der411.github.io/Formation-HTML-CSS/). Ce lien vous mènera à une page d'accueil contenant les liens vers chacun des projets.
+Vous pouvez explorer tous mes projets directement sur [GitHub Pages](https://der411.github.io/Projets_HTML-CSS-Grid/). Ce lien vous mènera à une page d'accueil contenant les liens vers chacun des projets.
 
 ## Installation 🔧
 
