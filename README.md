@@ -35,4 +35,4 @@ Vous pouvez explorer tous mes projets directement sur [GitHub Pages](https://der
 Pour cloner ce dépôt et explorer les projets localement, utilisez la commande suivante :
 
 ```sh
-git clone https://github.com/votre-utilisateur/Formation-HTML-CSS.git
+git clone git@github.com:der411/Projets_HTML-CSS-Grid.git
